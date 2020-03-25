@@ -14,6 +14,13 @@ galaxy.init = function(){
 	//galaxy.initMap();
 	// galaxy.header();
 	galaxy.mobileMenu();
+  galaxy.copyrightDate();
+}
+
+galaxy.copyrightDate = function() {
+  const today = new Date()
+  const year = today.getFullYear()
+  $('.copyright-year').html(year)
 }
 
 galaxy.midnight = function(){
