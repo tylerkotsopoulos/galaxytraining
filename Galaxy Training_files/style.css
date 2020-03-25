@@ -1052,20 +1052,28 @@ input[type="submit"]:hover {
   .services-content .services-items .services-item {
     max-width: 200px; } }
 
+
+.contact-map iframe {
+  max-width: 100%;
+}
+
 /*# Navigation and footer styles #*/
 /* -------------------------------------------------------------------------- */
 .header {
   position: fixed;
   top: 0;
-  left: 0;
-  height: 60px;
+  height: 65px;
   display: block;
   width: 100%;
+  background: rgba(0,0,0,0.7);
   z-index: 9;
   text-align: center;
-  color: #f2f2f2; }
+  color: #f2f2f2;
+  transition: background 0.2s ease-in-out;
+}
+
   .header .content-width {
-    height: 60px;
+    height: 65px;
     padding: 20px 40px;
     width: 100%;
     max-width: 100%; }

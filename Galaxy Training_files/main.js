@@ -10,9 +10,9 @@ galaxy.init = function(){
 	galaxy.smoothScroll();
 	galaxy.parallax();
 	// galaxy.par();
-	galaxy.lightbox();
+	// galaxy.lightbox();
 	//galaxy.initMap();
-	galaxy.header();
+	// galaxy.header();
 	galaxy.mobileMenu();
 }
 
@@ -22,8 +22,8 @@ galaxy.midnight = function(){
 
 galaxy.navigation = function(){
 	// $('.dot').click(function(){
-	//    $(".dot.current").removeClass("current"); 
-	//    $(this).addClass("current"); 
+	//    $(".dot.current").removeClass("current");
+	//    $(this).addClass("current");
 	// });
 	var contentSections = $('.cd-section'),
 		navigationItems = $('#cd-vertical-nav a');
@@ -47,7 +47,7 @@ galaxy.navigation = function(){
     //open-close navigation on touch devices
     $('.touch .cd-nav-trigger').on('click', function(){
     	$('.touch #cd-vertical-nav').toggleClass('open');
-  
+
     });
     //close navigation on touch devices when selectin an elemnt from the list
     $('.touch #cd-vertical-nav a').on('click', function(){
@@ -75,11 +75,11 @@ galaxy.navigation = function(){
 }
 
 galaxy.par = function(){
-	 window.onscroll = function(){   
+	 window.onscroll = function(){
      document.body.style.msPerspectiveOrigin =
      document.body.style.mozPerspectiveOrigin =
      document.body.style.webkitPerspectiveOrigin =
-     window.scrollX + "px " + 
+     window.scrollX + "px " +
      window.scrollY + "px";
    }
 }
@@ -150,9 +150,9 @@ galaxy.fullpage = function(){
 }
 
 galaxy.header = function(){
-	var flag = $('#header-fade').offset().top;
+	// var flag = $('#header-fade').offset().top;
 	$(document).scroll(function(){
-		if($(window).height() + $(this).scrollTop() > flag){
+		if($(this).scrollTop() > 65){
 			$('.header').addClass('bg--shaded-transparent');
 		}else{
 			$('.header').removeClass('bg--shaded-transparent');
